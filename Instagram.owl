@@ -13,6 +13,64 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#maxExclusive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2001/XMLSchema#maxExclusive"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#imageTypes -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#imageTypes">
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>GIF</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Jpeg</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>PNG</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -27,6 +85,85 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Challenge -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Challenge">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChallengeSticker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountDownDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountDownDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownColor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownColor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTimeSticker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeatherSticker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSum">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSticker"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Filters -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Filters"/>
@@ -36,6 +173,15 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FollowProperties -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FollowProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FundraiserName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FundraiserName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSticker"/>
+    </owl:ObjectProperty>
     
 
 
@@ -60,9 +206,71 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Location">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LocationSticker"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption4">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionText -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionText">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+    </owl:ObjectProperty>
     
 
 
@@ -180,15 +388,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasAddress -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasAddress">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasArchived -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasArchived">
@@ -298,6 +497,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMember">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasRole"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMentioned -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMentioned">
@@ -341,8 +550,15 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -567,9 +783,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ActionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ActionName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#AdditionalName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#AdditionalName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#AudioName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#AudioName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -617,9 +849,15 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Challenge -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Challenge">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChallengeSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChatId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChatId">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
@@ -649,8 +887,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountDownDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountDownDate">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -658,17 +894,13 @@
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
     
 
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownColor -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownColor">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -677,8 +909,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CountdownName">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Countdown"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -687,8 +917,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTime -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTime">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentTimeSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
@@ -697,26 +925,51 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeather -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeather">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#CurrentWeatherSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DateMesage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DateMesage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DocumentSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DocumentSize">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Image"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Voice"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation"/>
     
 
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSum -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSum">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
@@ -754,8 +1007,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FundraiserName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FundraiserName">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Donation"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -773,7 +1024,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -798,6 +1048,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ImageFormat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ImageFormat">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Gif</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Jpeg</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Png</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LastName -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LastName">
@@ -810,8 +1090,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Location -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Location">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Sticker"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LocationSticker"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -820,7 +1098,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Name -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Name">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -878,8 +1155,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption1 -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption1">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -888,8 +1163,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption2 -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption2">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -898,8 +1171,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption3 -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption3">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -908,8 +1179,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption4 -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOption4">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -917,18 +1186,22 @@
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionOptions"/>
     
 
 
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionText -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionText">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#RequestName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#RequestName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -991,12 +1264,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#TextMessage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#TextMessage">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#TiltShift -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#TiltShift">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#PostEffects"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Post"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Link"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1060,47 +1350,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#city -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#city">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#country -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#country">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#groupId -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#groupId">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#postalcode -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#postalcode">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#state -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#state">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1108,7 +1361,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#street -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#street">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1136,12 +1388,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Action -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Action"/>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Adress"/>
     
 
 
@@ -1248,6 +1494,20 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupChat -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupChat">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
     </owl:Class>
     
@@ -1264,6 +1524,22 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Individual -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Individual">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
     </owl:Class>
     
@@ -1273,6 +1549,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Layout">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Picture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Link">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Message"/>
     </owl:Class>
     
 
@@ -1405,6 +1689,22 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfCommunication -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfCommunication">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
     </owl:Class>
     
@@ -1467,6 +1767,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Accounts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Accounts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Action"/>
+        <ActionName>accounts</ActionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Administrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Administrator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
+        <GroupName>Administrator</GroupName>
+        <groupId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</groupId>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Albumi1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Albumi1">
@@ -1504,11 +1824,79 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Text"/>
+        <hasReceiver rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
+        <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ChatId>
+        <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:32:52</DateMesage>
+        <TextMessage>Përshëndetje Blend</TextMessage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat1.1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat1.1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Text"/>
+        <hasReceiver rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
+        <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ChatId>
+        <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:33:15</DateMesage>
+        <TextMessage>Përshëndetje Endrit</TextMessage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#EditStandardUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#EditStandardUser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Get"/>
+        <RequestName>Edit standard user</RequestName>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupChat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#GroupChat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Link"/>
+        <hasReceiver rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <hasReceiver rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
+        <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
+        <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2</ChatId>
+        <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:32:52</DateMesage>
+        <Url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://books.xmlschemata.org/relaxng/ch19-77049.html</Url>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#HomePage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#HomePage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Action"/>
+        <hasAccess rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Index"/>
+        <ActionName>HomePage</ActionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Index -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Index">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Get"/>
+        <RequestName>Index</RequestName>
     </owl:NamedIndividual>
     
 
@@ -1524,8 +1912,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Kosove -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Kosove">
-        <city rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prishtine</city>
-        <country rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kosove</country>
         <street rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bregu i diellit</street>
     </owl:NamedIndividual>
     
@@ -1611,6 +1997,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SaveEditStandardUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SaveEditStandardUser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#PostR"/>
+        <RequestName>Edit user profile standard user</RequestName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfChat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfChat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Image"/>
+        <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
+        <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ChatId>
+        <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:32:52</DateMesage>
+        <DocumentSize rdf:datatype="http://www.w3.org/2001/XMLSchema#float">564.0</DocumentSize>
+        <ImageFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jpeg</ImageFormat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StandardUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StandardUser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <hasMember rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
+        <hasPermission rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#EditStandardUser"/>
+        <hasPermission rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#HomePage"/>
+        <hasPermission rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SaveEditStandardUser"/>
+        <hasPermission rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#explore"/>
+        <GroupName>Standard user</GroupName>
+        <groupId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</groupId>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story1">
@@ -1628,6 +2052,36 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#directInbox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#directInbox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Get"/>
+        <RequestName>Direct inbox</RequestName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#emailsignup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#emailsignup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Get"/>
+        <RequestName>emailSignUp</RequestName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#explore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#explore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Action"/>
+        <ActionName>explore</ActionName>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1024.0</xsd:maxExclusive>
+    </rdf:Description>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1636,6 +2090,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Administrator"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StandardUser"/>
+        </owl:distinctMembers>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
