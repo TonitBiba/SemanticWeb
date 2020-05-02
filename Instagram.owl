@@ -1499,11 +1499,13 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
-                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minCardinality>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
-                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1529,12 +1531,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
                         <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1689,22 +1691,6 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfCommunication -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfCommunication">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceiver"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
-                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                        <owl:onClass rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
     </owl:Class>
     
@@ -2009,7 +1995,8 @@
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfChat1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfChat1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Image"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#SelfCommunication"/>
+        <hasReceiver rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
         <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
         <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ChatId>
         <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:32:52</DateMesage>
