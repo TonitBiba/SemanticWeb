@@ -1,0 +1,30 @@
+﻿@model ApplicationUW.Models.QueryOntology
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Mirëserdhët</h1>
+    <p>Aplikacioni i zhvilluar në kuadër të projektit në lëndën "Uebi Semantik" i cili ekzekuton SPARQL dhe SWRL query.</p>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-3">
+            @Html.LabelFor(m => m.Ontology, new { @class = "required" })
+            @Html.DropDownListFor(m => m.Ontology, new List<SelectListItem> { new SelectListItem { Value = "1", Text = "Instagram" }, new SelectListItem { Value = "2", Text = "My Heritage" } }, "Zgjedhe", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Ontology, null, new { @class = "text-danger" })
+        </div>
+        <div class="col-md-6">
+            @Html.LabelFor(m => m.Ontology, new { @class = "required" })
+            @Html.TextAreaFor(m => m.Ontology, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Ontology, null, new { @class = "text-danger" })
+        </div>
+    </div>
+}
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>

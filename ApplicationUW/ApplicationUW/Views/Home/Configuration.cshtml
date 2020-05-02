@@ -1,0 +1,29 @@
+﻿@model ApplicationUW.Models.Configuration
+
+@{
+    ViewData["Title"] = "Configuration";
+}
+<h1>Konfigurimet</h1>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-md-5">
+            @Html.LabelFor(m => m.InstagramPath)
+            @Html.TextBoxFor(m => m.InstagramPath, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.InstagramPath, null, new { @class = "text-danger" })
+        </div>
+        <div class="col-md-5">
+            @Html.LabelFor(m => m.MyHeritagePath)
+            @Html.TextBoxFor(m => m.MyHeritagePath, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.MyHeritagePath, null, new { @class = "text-danger" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
+            <button id="btnSubmit" type="submit" class="btn btn-primary w-100">Ndrysho</button>
+        </div>
+    </div>
+}
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
