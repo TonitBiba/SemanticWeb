@@ -84,20 +84,29 @@ namespace ApplicationUW.Controllers
         [HttpPost]
         public IActionResult Configuration(Configuration config)
         {
-            using (StreamReader file = new StreamReader("Config.json"))
+            try
             {
-                JsonSerializer serializer = new JsonSerializer();
-                var configurations = JsonConvert.DeserializeObject<Configuration>(file.ReadToEnd());
-                configurations.InstagramPath = config.InstagramPath;
-                configurations.MyHeritagePath = config.MyHeritagePath;
-
-                file.Close();
-
-                using (TextWriter filet = new StreamWriter("Config.json"))
+                using (StreamReader file = new StreamReader("Config.json"))
                 {
-                    serializer.Serialize(filet, configurations);
+                    JsonSerializer serializer = new JsonSerializer();
+                    var configurations = JsonConvert.DeserializeObject<Configuration>(file.ReadToEnd());
+                    configurations.InstagramPath = config.InstagramPath;
+                    configurations.MyHeritagePath = config.MyHeritagePath;
+
+                    file.Close();
+
+                    using (TextWriter filet = new StreamWriter("Config.json"))
+                    {
+                        serializer.Serialize(filet, configurations);
+                    }
+
+                    ViewBag.Error = new ErrorMessage { ErrorNumber = 1, ErrorDescription = "Te dhenat jane ruajtur me sukses!" };
+                    return View(configurations);
                 }
-                return View(configurations);
+            }catch(Exception ex)
+            {
+                ViewBag.Error = new ErrorMessage { ErrorNumber = 4, ErrorDescription = "Ka ndodhur nje gabim gjate ruajtjes. Provoni përsëri. "+ex.ToString() };
+                return View(config);
             }
         }
 

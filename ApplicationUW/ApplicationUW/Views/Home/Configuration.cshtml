@@ -1,7 +1,9 @@
-﻿@model ApplicationUW.Models.Configuration
+﻿@using ApplicationUW.Models
+@model Configuration
 
 @{
     ViewData["Title"] = "Configuration";
+    ErrorMessage error = ViewBag.Error ?? new ErrorMessage();
 }
 <h1>Konfigurimet</h1>
 
@@ -9,12 +11,12 @@
 {
     <div class="row">
         <div class="col-md-5">
-            @Html.LabelFor(m => m.InstagramPath)
+            @Html.LabelFor(m => m.InstagramPath, new { @class = "required" })
             @Html.TextBoxFor(m => m.InstagramPath, new { @class = "form-control" })
             @Html.ValidationMessageFor(m => m.InstagramPath, null, new { @class = "text-danger" })
         </div>
         <div class="col-md-5">
-            @Html.LabelFor(m => m.MyHeritagePath)
+            @Html.LabelFor(m => m.MyHeritagePath, new { @class = "required" })
             @Html.TextBoxFor(m => m.MyHeritagePath, new { @class = "form-control" })
             @Html.ValidationMessageFor(m => m.MyHeritagePath, null, new { @class = "text-danger" })
         </div>
@@ -25,5 +27,25 @@
     </div>
 }
 
-<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+@section scripts{
+    @if (ViewBag.Error != null)
+    {
+        <script>
+        if (@error.ErrorNumber ==1) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Sukses',
+                text: 'Të dhënat janë ruajtur me sukses',
+                timer: 1500
+            })
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Gabim',
+                text: "@error.ErrorDescription",
+                confirmButtonText:'Në rregull'
+            })
+        }
+        </script>
+    }
+}

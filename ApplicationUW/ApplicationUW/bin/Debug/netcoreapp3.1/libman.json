@@ -10,6 +10,11 @@
       "provider": "unpkg",
       "library": "datatables@1.10.18",
       "destination": "wwwroot/lib/datatables/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "sweetalert2@9.10.12",
+      "destination": "wwwroot/lib/sweetalert2/"
     }
   ]
 }

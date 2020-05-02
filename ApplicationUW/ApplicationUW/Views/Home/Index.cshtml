@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-7">
             @Html.LabelFor(m => m.Query, new { @class = "required" })
-            @Html.TextAreaFor(m => m.Query, new { @class = "form-control", placeholder= "SELECT DISTINCT ?Concept WHERE {[] a ?Concept}" })
+            @Html.TextAreaFor(m => m.Query, new { @class = "form-control", placeholder = "SELECT DISTINCT ?Concept WHERE {[] a ?Concept}" })
             @Html.ValidationMessageFor(m => m.Query, null, new { @class = "text-danger" })
         </div>
         <div class="col-md-2">
@@ -32,11 +32,9 @@
 <div id="queryResult"></div>
 
 @section scripts{
-    <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
-    
     <script>
         function onCompleted() {
-                $('#tblShowResult').DataTable()
+            $('#tblShowResult').DataTable()
         }
     </script>
 }
