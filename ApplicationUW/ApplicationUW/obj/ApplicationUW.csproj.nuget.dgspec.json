@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tonit\\source\\repos\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {}
+    "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tonit\\source\\repos\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {
+    "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tonit\\source\\repos\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+        "projectUniqueName": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
         "projectName": "ApplicationUW",
-        "projectPath": "C:\\Users\\tonit\\source\\repos\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+        "projectPath": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
         "packagesPath": "C:\\Users\\tonit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tonit\\source\\repos\\ApplicationUW\\ApplicationUW\\obj\\",
+        "outputPath": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -53,6 +53,10 @@
             "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
               "version": "[3.2.6, )"
+            },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[3.2.11, )"
             },
             "dotNetRDF": {
               "target": "Package",

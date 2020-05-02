@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ApplicationUW.Models.ResultQueryList>
+
+<h4>Rezultai i kerkimit</h4>
+<table id="tblShowResult" class="display">
+    <thead>
+        <tr>
+            <th>Subjekti</th>
+            <th>Predikati</th>
+            <th>Objekti</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var triple in Model)
+        {
+            <tr>
+                <td>@triple.Subject</td>
+                <td>@triple.Predicate</td>
+                <td>@triple.Object</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts{
+    <script>
+        $(document).load(function () {
+            $('#tblShowResult').DataTable()
+        })
+    </script>
+}
