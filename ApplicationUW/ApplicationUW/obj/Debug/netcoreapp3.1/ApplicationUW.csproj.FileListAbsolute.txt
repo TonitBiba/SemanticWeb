@@ -811,3 +811,4 @@ C:\Users\tonit\Documents\GitHub\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debu
 C:\Users\tonit\Documents\GitHub\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\ApplicationUW.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\tonit\Documents\GitHub\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\ApplicationUW.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\tonit\Documents\GitHub\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\Razor\Views\Home\_Index.cshtml.g.cs
+C:\Users\tonit\Documents\GitHub\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\Razor\Views\Home\ExecuteSparql.cshtml.g.cs

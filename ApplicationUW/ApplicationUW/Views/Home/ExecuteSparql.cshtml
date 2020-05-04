@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "ExecuteSparql";
+}
+
+
+<form action="@Url.Action("_ExecuteSPARQL")" method="post" data-ajax="true" data-ajax-method="post" data-ajax-success="onSuccess" data-ajax-complete="onCompleted()">
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-3">
+            @Html.Label("dataSet", "DataSet", new { @class = "required" })
+            @Html.TextBox("dataSet", null, new { @class = "form-control" })
+        </div>
+        <div class="col-md-7">
+            @Html.Label("Query", "Pyetesori", new { @class = "required" })
+            @Html.TextArea("Query", new { @class = "form-control", rows = "6" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
+            <button id="btnSubmit" type="submit" class="btn btn-primary w-100">Kërko</button>
+        </div>
+    </div>
+</form>
+
+<div id="queryResult"></div>
+
+<table id="tblResult">
+    <thead>
+        <tr></tr>
+    </thead>
+    <tbody></tbody>
+</table>
+@section scripts{
+    <script>
+        function onSuccess(data) {
+            var result = JSON.parse(data)
+            if (result.length != 0) {
+                $('table thead tr').empty()
+                $('table tbody').empty()
+
+                for (var i = 0; i < result[0].length; i++) {
+                    $('table thead tr').append('<th>' + result[0][i].Key + '</th>');
+                }
+
+                for (var i = 0; i < result.length; i++) {
+                    $('table tbody').append('<tr></tr>')
+                    for (var j = 0; j < result[i].length; j++) {
+                        $('table tbody tr').last().append('<td>' + (result[i][j].Value.value == undefined ? result[i][j].Value.uri : result[i][j].Value.value) + '</td>');
+                    }
+                }
+                $('#tblResult').DataTable()
+            } else {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Informate',
+                    text: "Nuk ka asnje rezultat",
+                    confirmButtonText:'Në rregull'
+                })
+            }
+        }
+        function onCompleted() {
+
+        }
+    </script>
+}

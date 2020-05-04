@@ -51,10 +51,11 @@ namespace ApplicationUW.Controllers
                 else if (results is IGraph)
                 {
                     IGraph resGraph = (IGraph)results;
-                    var result = resGraph.Triples.Select(s => new ResultQueryList {
-                         Object = s.Object.ToString(),
-                         Predicate = s.Predicate.ToString(),
-                         Subject= s.Subject.ToString()
+                    var result = resGraph.Triples.Select(s => new ResultQueryList
+                    {
+                        Object = s.Object.ToString(),
+                        Predicate = s.Predicate.ToString(),
+                        Subject = s.Subject.ToString()
                     });
                     return PartialView(result);
                 }
@@ -103,12 +104,49 @@ namespace ApplicationUW.Controllers
                     ViewBag.Error = new ErrorMessage { ErrorNumber = 1, ErrorDescription = "Te dhenat jane ruajtur me sukses!" };
                     return View(configurations);
                 }
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                ViewBag.Error = new ErrorMessage { ErrorNumber = 4, ErrorDescription = "Ka ndodhur nje gabim gjate ruajtjes. Provoni përsëri. "+ex.ToString() };
+                ViewBag.Error = new ErrorMessage { ErrorNumber = 4, ErrorDescription = "Ka ndodhur nje gabim gjate ruajtjes. Provoni përsëri. " + ex.ToString() };
                 return View(config);
             }
         }
 
+        public ActionResult ExecuteSparql()
+        {
+            return View();
+        }
+
+        public JsonResult _ExecuteSPARQL(string dataSet, string Query)
+        {
+            IGraph g = new Graph();
+            g.LoadFromFile(dataSet);
+            try
+            {
+                Object results = g.ExecuteQuery(Query);
+                if (results is SparqlResultSet)
+                {
+                    SparqlResultSet rset = (SparqlResultSet)results;
+                    var result = rset.Select(s => new ResultQueryList
+                    {
+                        Object = s.ToString(),
+                        Predicate = s.ToString(),
+                        Subject = s.ToString()
+                    });
+                    return Json(JsonConvert.SerializeObject(rset));
+                }
+                else if (results is IGraph)
+                {
+                    IGraph resGraph = (IGraph)results;
+                    return Json(resGraph.Triples);
+                }
+                else
+                    return Json(false);
+            }
+            catch (RdfQueryException queryEx)
+            {
+                return Json(queryEx);
+            }
+        }
     }
 }
