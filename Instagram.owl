@@ -2152,6 +2152,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
+        <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1"/>
+        <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option3"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChallengeStory"/>
     </owl:NamedIndividual>
     

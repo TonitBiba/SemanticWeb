@@ -2,10 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using VDS.RDF;
 using VDS.RDF.Query;
+using VDS.RDF.Shacl.Validation;
 
 namespace ApplicationUW.Controllers
 {
@@ -38,14 +40,27 @@ namespace ApplicationUW.Controllers
                 if (results is SparqlResultSet)
                 {
                     SparqlResultSet rset = (SparqlResultSet)results;
+                    string value = rset.Results.ElementAt(0).ToString();
+                    
+                    ResultQueryList rql = new ResultQueryList();
+                    rql.Columns = new List<string>();
+                    rql.Rows = new List<string>();
+                    int NumberOfColumns = rset.Results[0].Count();
 
-                    var result = rset.Select(s => new ResultQueryList
+                    for(int i=0;i<NumberOfColumns;i++)
                     {
-                        Object = s.ToString(),
-                        Predicate = s.ToString(),
-                        Subject = s.ToString()
-                    });
-                    return PartialView(result);
+                        rql.Columns.Add(rset.Results[0].ElementAt(i).Key.ToString());
+                    }
+
+                    for(int i=0;i<rset.Results.Count();i++)
+                    {
+                        for(int j=0;j<rset.Results.ElementAt(i).Count();j++)
+                        {
+                            rql.Rows.Add(rset.Results[i].ElementAt(j).Value.ToString());
+                        }
+                    }
+                    
+                    return PartialView(rql);
 
                 }
                 else if (results is IGraph)
