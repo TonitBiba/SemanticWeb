@@ -11,8 +11,7 @@ WHERE
 	?Chat insta:DateMesage ?dateMessage
 	FILTER (?dateMessage >= "2020-01-01T00:00:00"^^xsd:dateTime) .
 	?UserAccount insta:Name ?name
-	FILTER regex(?name, "[^Endrit]")
-		FILTER regex(?name, "^(?!E)")
+	FILTER regex(?name, "^(?!E)")
 }
 
 Group by ?UserAccount
