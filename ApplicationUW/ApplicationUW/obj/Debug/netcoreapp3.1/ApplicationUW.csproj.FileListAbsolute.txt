@@ -1611,3 +1611,4 @@ C:\Users\tonit\Source\Repos\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\ne
 C:\Users\tonit\Source\Repos\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\ApplicationUW.pdb
 C:\Users\tonit\Source\Repos\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\ApplicationUW.genruntimeconfig.cache
 C:\Users\tonit\Source\Repos\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\Razor\Views\SWRL\Index.cshtml.g.cs
+C:\Users\tonit\Source\Repos\SemanticWeb\ApplicationUW\ApplicationUW\obj\Debug\netcoreapp3.1\Razor\Views\SWRL\_Index.cshtml.g.cs
