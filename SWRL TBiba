@@ -1,0 +1,5 @@
+1. Find total message send per account that are newer than 02.01.2020, order by descending account and limit the result to first 2 records
+Chat(?chat) ^ hasSender(?chat, ?account) ^ DateMesage(?chat, ?message) ^ temporal:after(?message, "2020-01-02T21:33:00"^^xsd:dateTime) -> sqwrl:select(?account) ^ sqwrl:count(?account) ^ sqwrl:orderByDescending(?account) ^ sqwrl:limit(2) ^ sqwrl:columnNames("Account", "Total message send")
+
+2. Find number of messages that are send by users grouped by user group
+Group(?group) ^ hasMember(?group, ?user) ^ Chat(?chat) ^ hasSender(?t, ?chat) -> sqwrl:select(?group) ^ sqwrl:count(?t)

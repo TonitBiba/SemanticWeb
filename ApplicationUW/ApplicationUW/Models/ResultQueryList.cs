@@ -1,4 +1,6 @@
-﻿namespace ApplicationUW.Models
+﻿using System.Collections.Generic;
+
+namespace ApplicationUW.Models
 {
     public class ResultQueryList
     {
@@ -7,6 +9,9 @@
         public string Predicate { get; set; }
 
         public string Object { get; set; }
+
+        public List<string> Columns;
+        public List<string> Rows;
 
     }
 }

@@ -1,21 +1,28 @@
-﻿@model IEnumerable<ApplicationUW.Models.ResultQueryList>
+﻿@model ApplicationUW.Models.ResultQueryList
 
+@{
+    int rows = @Model.Rows.Count() / 3;
+    int columns = @Model.Columns.Count();
+}
 <h4>Rezultai i kerkimit</h4>
+
 <table id="tblShowResult" class="display">
     <thead>
         <tr>
-            <th>Subjekti</th>
-            <th>Predikati</th>
-            <th>Objekti</th>
+            @for (int i = 0; i < columns; i++)
+            {
+                <th>@Model.Columns[i]</th>
+            }
         </tr>
     </thead>
     <tbody>
-        @foreach (var triple in Model)
+        @for (int i = 0; i < rows; i++)
         {
             <tr>
-                <td>@triple.Subject</td>
-                <td>@triple.Predicate</td>
-                <td>@triple.Object</td>
+                @for (int j = 0; j < columns; j++)
+                {
+                    <td>@Model.Rows.ElementAt(i * columns + j)</td>
+                }
             </tr>
         }
     </tbody>

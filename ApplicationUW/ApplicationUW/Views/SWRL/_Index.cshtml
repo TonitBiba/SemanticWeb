@@ -1,0 +1,19 @@
+﻿@model IEnumerable<string>
+
+<h4>Rezultai i kerkimit</h4>
+
+<table id="tblShowResult" class="display">
+    <thead>
+        <tr>
+            Rezultati
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item</td>
+            </tr>
+        }
+    </tbody>
+</table>

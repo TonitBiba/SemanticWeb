@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {}
+    "C:\\Users\\tonit\\Source\\Repos\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {
+    "C:\\Users\\tonit\\Source\\Repos\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+        "projectUniqueName": "C:\\Users\\tonit\\Source\\Repos\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
         "projectName": "ApplicationUW",
-        "projectPath": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+        "projectPath": "C:\\Users\\tonit\\Source\\Repos\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
         "packagesPath": "C:\\Users\\tonit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tonit\\Documents\\GitHub\\SemanticWeb\\ApplicationUW\\ApplicationUW\\obj\\",
+        "outputPath": "C:\\Users\\tonit\\Source\\Repos\\SemanticWeb\\ApplicationUW\\ApplicationUW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tonit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,7 +44,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[3.1.3, )"
             },
             "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
