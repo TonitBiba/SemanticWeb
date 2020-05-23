@@ -2,8 +2,7 @@
   "runtimeOptions": {
     "additionalProbingPaths": [
       "C:\\Users\\tonit\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tonit\\.nuget\\packages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Users\\tonit\\.nuget\\packages"
     ]
   }
 }

@@ -7,13 +7,13 @@
 <form action="@Url.Action("_ExecuteSPARQL")" method="post" data-ajax="true" data-ajax-method="post" data-ajax-success="onSuccess" data-ajax-complete="onCompleted()">
     @Html.AntiForgeryToken()
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-12">
             @Html.Label("dataSet", "DataSet", new { @class = "required" })
-            @Html.TextBox("dataSet", null, new { @class = "form-control" })
+            @Html.TextBox("dataSet", @"C:\Users\tonit\Downloads\foaf.rdf", new { @class = "form-control" })
         </div>
-        <div class="col-md-7">
+        <div class="col-md-12">
             @Html.Label("Query", "Pyetesori", new { @class = "required" })
-            @Html.TextArea("Query", new { @class = "form-control", rows = "6" })
+            @Html.TextArea("Query", new { @class = "form-control", rows = "12" })
         </div>
         <div class="col-md-2">
             @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
@@ -45,7 +45,7 @@
                 for (var i = 0; i < result.length; i++) {
                     $('table tbody').append('<tr></tr>')
                     for (var j = 0; j < result[i].length; j++) {
-                        $('table tbody tr').last().append('<td>' + (result[i][j].Value.value == undefined ? result[i][j].Value.uri : result[i][j].Value.value) + '</td>');
+                        $('table tbody tr').last().append('<td>' + (result[i][j].Value.value == undefined ? (result[i][j].Value.uri == undefined ? result[i][j].Value.Value : result[i][j].Value.uri) : result[i][j].Value.value) + '</td>');
                     }
                 }
                 $('#tblResult').DataTable()
