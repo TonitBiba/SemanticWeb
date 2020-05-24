@@ -1,0 +1,4 @@
+1. Find all user's posts which he/she has archived.
+Account(?account) ^ Post(?post) ^ hasPublished(?account, ?post) ^ hasArchived(?account, ?post) -> sqwrl:select(?account) ^ sqwrl:select(?post)
+2. Find all Donation sticker stories which have been published with Fundraiser1 as fundraiser and donation goal greater than 3000.
+DonationSticker(?donation) ^ Story(?story) ^ Account(?account) ^ hasPublished(?account, ?story) ^ addStickerToStory(?donation, ?story) ^ FundraiserName(?donation, ?name) ^ DonationSum(?donation, ?sum) ^ swrlb:matches(?name, "Fundraiser1") ^ swrlb:greaterThan(?sum, 3000) -> sqwrl:select(?account) ^ sqwrl:select(?donation) ^ sqwrl:select(?name) ^ sqwrl:select(?sum) ^ sqwrl:orderByDescending(?sum)
