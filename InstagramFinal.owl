@@ -2042,7 +2042,7 @@
         <hasSender rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
         <ChatId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ChatId>
         <DateMesage rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-02T21:32:52</DateMesage>
-        <TextMessage>Përshën Blend</TextMessage>
+        <TextMessage>Përshëndetje Blend</TextMessage>
     </owl:NamedIndividual>
     
 
