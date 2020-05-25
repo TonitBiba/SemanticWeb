@@ -56,7 +56,7 @@ namespace ApplicationUW.Controllers
                     {
                         for(int j=0;j<rset.Results.ElementAt(i).Count();j++)
                         {
-                            rql.Rows.Add(rset.Results[i].ElementAt(j).Value.ToString());
+                            rql.Rows.Add(rset.Results[i].ElementAt(j).Value == null ? "": rset.Results[i].ElementAt(j).Value.ToString());
                         }
                     }
                     
