@@ -1,0 +1,1047 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-10="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAunt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAunt">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasBrother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasBrother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDaughter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPartner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasForeFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasForeFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasForeMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasForeMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGreatGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGreatGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGreatParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGreatParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMalePartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMalePartner">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPartner"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPartner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPartner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isPartnerIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Marriage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSister -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSister">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSpouse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSpouse"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasUncle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasUncle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isAuntOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isAuntOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isRelativeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isBrotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSiblingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isDaughterOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isParentOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isPartnerIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isPartnerIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isRelativeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isRelativeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSiblingOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSisterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSiblingOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSonOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isUncleOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isUncleOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isRelativeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAffilitation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAffilitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCauseOfDeath -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCauseOfDeath">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCityOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCityOfBirth">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPlaceOfBirth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCityOfDeath -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCityOfDeath">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCountryOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasCountryOfBirth">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPlaceOfBirth"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDegree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDegree">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEducationInfo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Bachelor</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>High School</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Master</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>None</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Unknown</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDescription">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEducationInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEducationInfo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEmailAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEmailAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFirstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFirstName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLastName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasName"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCountry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCountry">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasNationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasNationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Albanian</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>German</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Italian</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Kosovan</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Unknown</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoneNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoto">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPlaceOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPlaceOfBirth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasReligion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasReligion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Catholic</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Hindu</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Jewish</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Muslim</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>No Religion</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Unknown</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRestingPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRestingPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasStreet -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasStreet">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGeneralInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasUniversityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasUniversityName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEducationInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasWebpage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasWebpage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfBirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfBirth">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfDeath -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfDeath">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasDeceased"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfGraduation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfGraduation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEducationInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfMarriage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasYearOfMarriage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasZipCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasZipCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ancestors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ancestors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Aunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Aunt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isAuntOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BrotherInLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BrotherInLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#CousinInLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#CousinInLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Cousins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Cousins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Cousins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Father -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Father">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FatherInLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FatherInLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ancestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FirstCousin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FirstCousin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Cousins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#ForeFather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#ForeFather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#ForeMother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#ForeMother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandFather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandFather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandMother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandMother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatAunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatAunt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatGreatGrandFather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatGreatGrandFather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatGreatGrandMother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatGreatGrandMother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatUncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GreatUncle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ancestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Marriage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Marriage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Mother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MotherInLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MotherInLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Parents">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#SecondCousin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#SecondCousin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Cousins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#SisterInLaw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#SisterInLaw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Siblings"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Uncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Uncle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Relatives"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Blend_Berisha -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Blend_Berisha">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <hasFirstName>Blend</hasFirstName>
+        <hasLastName>Berisha</hasLastName>
+        <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasYearOfBirth>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Endrit_Meziu -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Endrit_Meziu">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Tonit_Biba -->
+
+    <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Tonit_Biba">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
