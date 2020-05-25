@@ -7585,11 +7585,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\Verzioni i Fundit\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
       "projectName": "ApplicationUW",
-      "projectPath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\Verzioni i Fundit\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+      "projectPath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\Verzioni i Fundit\\SemanticWeb\\ApplicationUW\\ApplicationUW\\obj\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\SemanticWeb\\ApplicationUW\\ApplicationUW\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

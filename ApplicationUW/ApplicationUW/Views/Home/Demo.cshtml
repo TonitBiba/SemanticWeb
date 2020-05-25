@@ -1,0 +1,59 @@
+﻿@using ApplicationUW.Models
+@model DemoModel
+@{
+    ViewData["Title"] = "Demo";
+}
+
+@using (Html.BeginForm("Demo", "Home", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-10">
+            @Html.LabelFor(m => m.Path, new { @class = "required" })
+            @Html.TextBoxFor(m => m.Path, new { @class = "form-control" })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
+            <button id="btnRead" type="submit" name="buttonId" value="Lexo" class="btn btn-primary w-100">Lexo</button>
+        </div>
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Data, new { @class = "optional" })
+            @Html.TextArea("DataRead", null, new { @class = "form-control", Value = ViewBag.DataRead })
+        </div>
+        <div class="col-md-2">
+            @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
+            <button id="btnSubmit" type="submit" name="buttonId" value="Kërko" class="btn btn-primary w-100">Kërko</button>
+        </div>
+    </div>
+}
+
+@if (Model != null)
+{
+    if (Model.ProcessedData != null)
+    {
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @for (int i = 0; i < Model.ProcessedData.Count; i++)
+                        {
+                            <tr>
+                                <td><b>@Html.DisplayFor(modelItem => Model.ProcessedData.ElementAt(i).Property)</b></td>
+                                <td>@Html.DisplayFor(modelItem => Model.ProcessedData.ElementAt(i).Value)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+}
+
+
+

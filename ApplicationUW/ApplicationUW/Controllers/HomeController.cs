@@ -1,4 +1,5 @@
 ﻿using ApplicationUW.Models;
+using HtmlAgilityPack;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
@@ -162,6 +163,93 @@ namespace ApplicationUW.Controllers
             {
                 return Json(queryEx);
             }
+        }
+        [HttpGet]
+        public ActionResult Demo()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Demo(DemoModel dm, string buttonId)
+        {
+            if (buttonId == "Lexo")
+            {
+                string path = dm.Path;
+                StreamReader sr = new StreamReader(path);
+                string content = sr.ReadToEnd();
+                sr.Close();
+                ViewBag.DataRead = content;
+                return View(dm);
+            }
+            else
+            {
+                string path = dm.Path;
+                StreamReader sr = new StreamReader(path);
+                string content = sr.ReadToEnd();
+                sr.Close();
+
+
+                ViewBag.DataRead = content;
+
+                HtmlDocument doc = new HtmlDocument();
+                doc.LoadHtml(content);
+                if (path.Contains("SemanticPerson"))
+                {
+                    var myData = doc.DocumentNode.SelectNodes("//div");
+                    var childs = myData[0].ChildNodes;
+
+                    List<DemoModel> Data = new List<DemoModel>();
+                    foreach (var child in childs)
+                    {
+                        if (child.Name == "div")
+                        {
+                            var divChilds = child.ChildNodes;
+                            foreach (var divChild in divChilds)
+                            {
+                                if (divChild.Name != "#text")
+                                {
+                                    var attr = divChild.Attributes;
+                                    Data.Add(new DemoModel
+                                    {
+                                        Property = attr[0].Value,
+                                        Value = divChild.InnerHtml
+                                    });
+                                }
+                            }
+                        }
+                        if (child.Name != "#text" && child.Name != "div")
+                        {
+                            var attr = child.Attributes;
+                            Data.Add(new DemoModel
+                            {
+                                Property = attr[0].Value,
+                                Value = child.InnerHtml
+                            });
+                        }
+                    }
+                    dm.ProcessedData = Data;
+                    return View(dm);
+                }
+                else
+                {
+                    var myData = doc.DocumentNode.SelectNodes("//body");
+                    var childs = myData[0].ChildNodes;
+                    List<DemoModel> Data = new List<DemoModel>();
+                    foreach (var child in childs)
+                    {
+
+                        Data.Add(new DemoModel
+                        {
+                            Value = child.InnerHtml
+                        });
+
+                    }
+                    dm.ProcessedData = Data;
+                    return View(dm);
+                }
+            }
+
         }
     }
 }

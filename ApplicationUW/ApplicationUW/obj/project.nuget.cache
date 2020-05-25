@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RqXpFqMB24BZcRftgzeH8YD4YFGvUaCp7HTEG0WjXFXm83F4uZbrfUzJKU8U4kfyQ9LFfqag2ZPpeEKhszrNnw==",
+  "dgSpecHash": "fk/XYU948G2T9FF5MRHn6fC8GD4tHYTO0OC8tyJhAxNtBdGorvtz6LqPopB/bo1oO/m7hGkMfV5BqX6ZBOBW4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\Verzioni i Fundit\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\Instagram Ontology\\SemanticWeb\\ApplicationUW\\ApplicationUW\\ApplicationUW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\anglesharp\\0.13.0\\anglesharp.0.13.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\dotnetrdf\\2.5.1\\dotnetrdf.2.5.1.nupkg.sha512",
