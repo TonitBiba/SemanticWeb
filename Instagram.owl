@@ -1898,6 +1898,7 @@
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#BuildingSchoolsDonation"/>
         <hasRole rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StandardUser"/>
         <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
+        <startedFollowing rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
         <BirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-05-02T00:00:00</BirthDay>
         <Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blend.berisha@hotmail.com</Email>
         <Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endrit.meziu@hotmail.com</Email>
@@ -2034,11 +2035,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
+        <UnderageAccount rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
         <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1"/>
+        <hasArchived rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StorytoArchive"/>
         <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option2"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionStory"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story1"/>
+        <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StorytoArchive"/>
+        <hasSendFollowRequest rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Person1"/>
+        <startedFollowing rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba"/>
         <BirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-05-02T00:00:00</BirthDay>
         <Email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">endrit.meziu@hotmail.com</Email>
         <Gender rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Male</Gender>
@@ -2048,6 +2054,14 @@
         <PhoneNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">+38344111222</PhoneNumber>
         <UserId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</UserId>
         <Username>endrit.meziu</Username>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FamilyStory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FamilyStory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story"/>
     </owl:NamedIndividual>
     
 
@@ -2110,6 +2124,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LiveStream-_Reaching_50k_Subs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LiveStream-_Reaching_50k_Subs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Live"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option1">
@@ -2141,7 +2163,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Person1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Private"/>
-        <hasAcceptedFollow rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <hasAcceptedFollow rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
+        <hasArchived rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FamilyStory"/>
+        <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FamilyStory"/>
         <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
     </owl:NamedIndividual>
     
@@ -2291,17 +2315,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StorytoArchive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#StorytoArchive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
+        <HateAccount rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Person1"/>
         <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question2"/>
         <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1"/>
         <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option3"/>
         <hasCommented rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChallengeStory"/>
+        <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LiveStream-_Reaching_50k_Subs"/>
         <hasRole rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Administrator"/>
+        <hasSendFollowRequest rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Person1"/>
         <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
+        <startedFollowing rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <startedFollowing rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Endrit_Meziu"/>
         <BirthDay rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1996-05-02T00:00:00</BirthDay>
         <Email>tonit.biba@hotmail.com</Email>
         <Gender>Male</Gender>
@@ -2398,6 +2435,27 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#story">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#name">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#sum">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#post">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#private">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -2410,11 +2468,252 @@
     <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#message">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Find all archived user posts</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Post"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#post"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasPublished"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#post"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasArchived"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#post"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#post"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Private"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#private"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasReceivedFollowRequest"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#private"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasAcceptedFollow"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#private"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMember"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#user"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#chat"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#t"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#chat"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                                <swrl:arguments rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#t"/>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -2573,7 +2872,7 @@
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -2581,8 +2880,8 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Group"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSticker"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -2590,10 +2889,9 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasMember"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#user"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#story"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -2602,8 +2900,8 @@
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Chat"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#chat"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Account"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2612,12 +2910,99 @@
                                         <rdf:first>
                                             <rdf:Description>
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasSender"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#t"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#chat"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#hasPublished"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#story"/>
                                             </rdf:Description>
                                         </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#addStickerToStory"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#story"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#FundraiserName"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#name"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#DonationSum"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#sum"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                                                                                <swrl:arguments>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#name"/>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundraiser1</rdf:first>
+                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </swrl:arguments>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                                        <swrl:arguments>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#sum"/>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3000</rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </swrl:arguments>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
                                     </rdf:Description>
                                 </rdf:rest>
                             </rdf:Description>
@@ -2634,7 +3019,7 @@
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
                         <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                         <swrl:arguments rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#group"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#account"/>
                         </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
@@ -2644,13 +3029,55 @@
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#count"/>
+                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
                                 <swrl:arguments rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#t"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#donation"/>
                                 </swrl:arguments>
                             </rdf:Description>
                         </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                        <swrl:arguments rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#name"/>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#sum"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#orderByDescending"/>
+                                                        <swrl:arguments rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#sum"/>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
                     </rdf:Description>
                 </rdf:rest>
             </rdf:Description>
