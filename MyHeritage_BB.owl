@@ -22,6 +22,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GEDCOMImportedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GEDCOMImportedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasImportedGEDCOM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAccountType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAccountType"/>
+    
+
+
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
@@ -32,6 +46,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAunt">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isAuntOf"/>
     </owl:ObjectProperty>
     
 
@@ -48,6 +63,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasBrother">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isBrotherOf"/>
     </owl:ObjectProperty>
     
 
@@ -64,6 +80,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFather">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFatherOf"/>
     </owl:ObjectProperty>
     
 
@@ -73,6 +90,12 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleDescendants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleDescendants"/>
     
 
 
@@ -100,10 +123,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleDescendants"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandMother -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandMother">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleAncestors"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandMotherOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -112,6 +146,31 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandParent">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandFather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleDescendants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGrandDaughter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGrandDaughter">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemaleDescendants"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGrandSon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGreatGrandSon">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleDescendants"/>
     </owl:ObjectProperty>
     
 
@@ -132,11 +191,23 @@
     
 
 
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasImportedGEDCOM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasImportedGEDCOM"/>
+    
+
+
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleAncestors">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAncestors"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleDescendants -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMaleDescendants"/>
     
 
 
@@ -152,6 +223,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMother">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMotherOf"/>
     </owl:ObjectProperty>
     
 
@@ -210,6 +282,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSister">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSiblings"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSisterOf"/>
     </owl:ObjectProperty>
     
 
@@ -224,7 +297,9 @@
 
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSpouse -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSpouse"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSpouse">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
     
 
 
@@ -232,6 +307,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasUncle">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasRelatives"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isUncleOf"/>
     </owl:ObjectProperty>
     
 
@@ -263,6 +339,66 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFatherOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isParentOf"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFemaleAncestoreOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFemaleAncestoreOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isForeFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isForeFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMaleAncestorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isForeMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isForeMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFemaleAncestoreOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMaleAncestorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFemaleAncestoreOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGreatGreatGrandMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGreatGreatGrandMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isFemaleAncestoreOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGreatGreatParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGreatGreatParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMaleAncestorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMaleAncestorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isMaleAncestorOf"/>
     
 
 
@@ -365,7 +501,9 @@
 
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -445,6 +583,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasEmailAddress">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -477,6 +616,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCity">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -485,6 +625,35 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasLivingCountry">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Albania</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Germany</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Italia</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Kosovo</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
     </owl:DatatypeProperty>
     
 
@@ -542,6 +711,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoneNumber">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
     </owl:DatatypeProperty>
     
 
@@ -550,6 +720,23 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasPhoto">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>gif</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>jpeg</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
     </owl:DatatypeProperty>
     
 
@@ -621,6 +808,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasStreet">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasContactInfo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -717,6 +905,14 @@
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
     </owl:Class>
     
@@ -734,6 +930,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#All-In-OneChart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Charts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart"/>
     </owl:Class>
     
 
@@ -742,6 +939,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AncestorChart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Charts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart"/>
     </owl:Class>
     
 
@@ -777,6 +975,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BookReport">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Reports"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#TimeLine"/>
     </owl:Class>
     
 
@@ -785,6 +984,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BowtieChart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Charts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart"/>
     </owl:Class>
     
 
@@ -840,6 +1040,17 @@
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Daughter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Daughter">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isDaughterOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child"/>
     </owl:Class>
     
@@ -849,6 +1060,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#DescendantChart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Charts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart"/>
     </owl:Class>
     
 
@@ -857,6 +1069,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Charts"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HourglassChart"/>
     </owl:Class>
     
 
@@ -881,6 +1094,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
     </owl:Class>
     
 
@@ -913,6 +1127,15 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#ForeMother">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FemaleAncestors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Premium"/>
     </owl:Class>
     
 
@@ -1038,6 +1261,17 @@
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#MaleAncestors">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isGrandFather"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ancestors"/>
     </owl:Class>
     
@@ -1095,7 +1329,39 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasParent"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Premium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Premium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountType"/>
     </owl:Class>
     
 
@@ -1160,6 +1426,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Sex">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HeritageDomain"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
     </owl:Class>
     
 
@@ -1191,6 +1458,17 @@
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Son -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Son">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#isSonOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PersonAccount"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Child"/>
     </owl:Class>
     
@@ -1263,10 +1541,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha">
+        <hasFather rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Kadri_Berisha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Albanian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Albanian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Blend_Berisha -->
 
     <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Blend_Berisha">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FanChart"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
+        <hasAccountType rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+        <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha"/>
+        <hasFather rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nexhat_Berisha"/>
+        <hasGrandParent rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha"/>
+        <hasMother rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Xhevahire_Berisha"/>
+        <hasUncle rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nezhdet_Berisha"/>
+        <hasDegree rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachelor</hasDegree>
         <hasFirstName>Blend</hasFirstName>
         <hasLastName>Berisha</hasLastName>
         <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasYearOfBirth>
@@ -1278,7 +1583,96 @@
 
     <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Endrit_Meziu">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HourglassChart"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</hasYearOfBirth>
     </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#English -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#English">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Italian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Italian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Kadri_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Kadri_Berisha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Mone_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Mone_Berisha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman"/>
+        <hasGrandSon rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Blend_Berisha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nexhat_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nexhat_Berisha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasBrother rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nezhdet_Berisha"/>
+        <hasFather rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha"/>
+        <hasSister rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha"/>
+        <hasSpouse rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Xhevahire_Berisha"/>
+        <hasDegree>Bachelor</hasDegree>
+        <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1956</hasYearOfBirth>
+        <hasYearOfMarriage rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1980</hasYearOfMarriage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nezhdet_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nezhdet_Berisha"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PremiumUser -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#PremiumUser"/>
     
 
 
@@ -1286,7 +1680,44 @@
 
     <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Tonit_Biba">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
     </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Xhevahire_Berisha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Xhevahire_Berisha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Woman"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female"/>
+            </owl:Restriction>
+        </rdf:type>
+        <hasMother rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Mone_Berisha"/>
+        <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1957</hasYearOfBirth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#All-In-OneChart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AncestorChart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BowtieChart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#DescendantChart"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 
