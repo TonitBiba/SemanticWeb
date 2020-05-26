@@ -1432,45 +1432,6 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#isBrandedContent">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#PostData"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#isSponsored -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#isSponsored">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#PostData"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#reach -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#reach">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#BusinessAccountData"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#street -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#street">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#AccountData"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#weeklyinteractions -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#weeklyinteractions">
@@ -1928,7 +1889,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
+        <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question2"/>
+        <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option3"/>
+        <hasLiked rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#BuildingSchoolsDonation"/>
+        <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
     </owl:NamedIndividual>
     
 
@@ -2027,6 +1992,8 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
         <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1"/>
         <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option2"/>
+        <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
+        <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionStory"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story1"/>
         <Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endrit</Name>
     </owl:NamedIndividual>
@@ -2082,6 +2049,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Live"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option1">
@@ -2114,6 +2089,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Person1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Private"/>
         <hasAcceptedFollow rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Blend_Berisha"/>
+        <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
     </owl:NamedIndividual>
     
 
@@ -2160,6 +2136,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question"/>
+        <addOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option1"/>
+        <addOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option2"/>
+        <addOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option3"/>
+        <addQuestionToSticker rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker2"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1">
@@ -2178,6 +2166,23 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker1">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker"/>
         <addStickerToStory rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#BusinessStory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionSticker"/>
+        <addStickerToStory rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionStory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionStory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionStory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Story"/>
     </owl:NamedIndividual>
     
 
@@ -2242,9 +2247,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Tonit_Biba">
         <rdf:type rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Public"/>
+        <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Question2"/>
         <hasAnsweredQuestion rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#QuestionId1"/>
         <hasChosenOption rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#Option3"/>
+        <hasCommented rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
         <hasPublished rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#ChallengeStory"/>
+        <isWatching rdf:resource="http://www.semanticweb.org/tonit/ontologies/2020/3/Instagram.owl#LivePost"/>
     </owl:NamedIndividual>
     
 
@@ -2320,4 +2328,7 @@
     </rdf:Description>
 </rdf:RDF>
 
+
+
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

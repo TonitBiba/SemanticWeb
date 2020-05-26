@@ -18,7 +18,7 @@ WHERE
 		}
     } 
 } GROUP BY  ?question ?option ?responses
-Order by DESC(?responses)
+Order by DESC(?responses) DESC(?question)
 
 
 2. Find all live posts with more than x viewers, x likes and x unique comments.
