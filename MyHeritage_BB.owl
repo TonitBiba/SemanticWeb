@@ -1566,6 +1566,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
         <hasAccountType rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+        <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person3"/>
         <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha"/>
         <hasFather rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nexhat_Berisha"/>
         <hasGrandParent rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha"/>
@@ -1576,6 +1577,24 @@
         <hasLastName>Berisha</hasLastName>
         <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1996</hasYearOfBirth>
     </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person3"/>
     
 
 
@@ -1593,6 +1612,8 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
             </owl:Restriction>
         </rdf:type>
+        <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person1"/>
+        <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person2"/>
         <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</hasYearOfBirth>
     </owl:Thing>
     
@@ -1608,7 +1629,10 @@
 
     <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
+        <hasAccountType rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+    </owl:NamedIndividual>
     
 
 
