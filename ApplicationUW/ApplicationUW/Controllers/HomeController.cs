@@ -41,27 +41,14 @@ namespace ApplicationUW.Controllers
                 if (results is SparqlResultSet)
                 {
                     SparqlResultSet rset = (SparqlResultSet)results;
-                    string value = rset.Results.ElementAt(0).ToString();
-                    
-                    ResultQueryList rql = new ResultQueryList();
-                    rql.Columns = new List<string>();
-                    rql.Rows = new List<string>();
-                    int NumberOfColumns = rset.Results[0].Count();
 
-                    for(int i=0;i<NumberOfColumns;i++)
+                    var result = rset.Select(s => new ResultQueryList
                     {
-                        rql.Columns.Add(rset.Results[0].ElementAt(i).Key.ToString());
-                    }
-
-                    for(int i=0;i<rset.Results.Count();i++)
-                    {
-                        for(int j=0;j<rset.Results.ElementAt(i).Count();j++)
-                        {
-                            rql.Rows.Add(rset.Results[i].ElementAt(j).Value == null ? "": rset.Results[i].ElementAt(j).Value.ToString());
-                        }
-                    }
-                    
-                    return PartialView(rql);
+                        Object = s.ToString(),
+                        Predicate = s.ToString(),
+                        Subject = s.ToString()
+                    });
+                    return PartialView(result);
 
                 }
                 else if (results is IGraph)
