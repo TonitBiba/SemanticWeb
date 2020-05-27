@@ -4,3 +4,10 @@ Account(?account) ^ Post(?post) ^ hasPublished(?account, ?post) ^ hasArchived(?a
 DonationSticker(?donation) ^ Story(?story) ^ Account(?account) ^ hasPublished(?account, ?story) ^ addStickerToStory(?donation, ?story) ^ FundraiserName(?donation, ?name) ^ DonationSum(?donation, ?sum) ^ swrlb:matches(?name, "Fundraiser1") ^ swrlb:greaterThan(?sum, 3000) -> sqwrl:select(?account) ^ sqwrl:select(?donation) ^ sqwrl:select(?name) ^ sqwrl:select(?sum) ^ sqwrl:orderByDescending(?sum)
 3. Find all Followers of private account Person1
 Private(?private) ^ Account(?account) ^ hasReceivedFollowRequest(?private,?account) ^ hasAcceptedFollow(?private,?account) -> sqwrl:select(?account)
+
+//MyHeritage
+1. Find all Male FreeUser who have FemalePartner who also has a FreeUser Account
+Free(?Account) ^ Male(?Account) ^ Female(?Female) ^ Free(?Female) ^ hasFemalePartner(?Account,?Female) -> sqwrl:select(?Account)
+
+2.Find all Male PremiumUser Accounts who have English account language and have both grandfather and grandmother
+Female(?female) ^ Male(?male) ^ Male(?account) ^ Premium(?account) ^ AccountLanguage(?accountlanguage) ^ hasAccountLanguage(?account, ?accountlanguage) ^ hasGrandParent(?account, ?male) ^ hasGrandMother(?account, ?female) ^ LanguageName(?accountlanguage, ?name) ^ swrlb:matches(?name, "English") -> sqwrl:select(?account)

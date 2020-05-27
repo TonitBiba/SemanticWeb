@@ -6,8 +6,28 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:untitled-ontology-10="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -27,6 +47,12 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GEDCOMImportedBy">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasImportedGEDCOM"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAccountLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAccountLanguage"/>
     
 
 
@@ -464,6 +490,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#LanguageName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#LanguageName"/>
     
 
 
@@ -1569,6 +1601,7 @@
         <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person3"/>
         <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Myzafere_Berisha"/>
         <hasFather rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nexhat_Berisha"/>
+        <hasFemalePartner rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female_Account"/>
         <hasGrandParent rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Ahmet_Berisha"/>
         <hasMother rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Xhevahire_Berisha"/>
         <hasUncle rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Nezhdet_Berisha"/>
@@ -1602,18 +1635,21 @@
 
     <owl:Thing rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Endrit_Meziu">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#HourglassChart"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Man"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Premium"/>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasSex"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
             </owl:Restriction>
         </rdf:type>
+        <hasAccountLanguage rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#English"/>
         <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person1"/>
         <hasAunt rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Default_Person2"/>
+        <hasGrandMother rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandMother_Meziu"/>
+        <hasGrandParent rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandParent_Meziu"/>
         <hasYearOfBirth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</hasYearOfBirth>
     </owl:Thing>
     
@@ -1623,6 +1659,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#English">
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage"/>
+        <LanguageName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</LanguageName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female_Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female_Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
     </owl:NamedIndividual>
     
 
@@ -1632,6 +1678,22 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser">
         <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
         <hasAccountType rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#FreeUser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandMother_Meziu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandMother_Meziu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandParent_Meziu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#GrandParent_Meziu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
     </owl:NamedIndividual>
     
 
@@ -1741,6 +1803,276 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#BowtieChart"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#DescendantChart"/>
         </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#male">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#accountlanguage">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#name">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Account">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#male"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Premium"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#AccountLanguage"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#accountlanguage"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasAccountLanguage"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#accountlanguage"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandParent"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#male"/>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                        <rdf:first>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasGrandMother"/>
+                                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                                                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                <rdf:first>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#LanguageName"/>
+                                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#accountlanguage"/>
+                                                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#name"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                                        <rdf:first>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#matches"/>
+                                                                                                <swrl:arguments>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#name"/>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">English</rdf:first>
+                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </swrl:arguments>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:first>
+                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#account"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Account"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Male"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Account"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Female"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Free"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#hasFemalePartner"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Account"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#female"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select"/>
+                        <swrl:arguments rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/admin.pc/ontologies/2020/4/untitled-ontology-10#Account"/>
+                        </swrl:arguments>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
 </rdf:RDF>
 
