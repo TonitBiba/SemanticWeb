@@ -120,13 +120,22 @@ namespace ApplicationUW.Controllers
             return View();
         }
 
-        public JsonResult _ExecuteSPARQL(string dataSet, string Query)
+        public JsonResult _ExecuteSPARQL(QueryOntology queryOntology)
         {
             IGraph g = new Graph();
-            g.LoadFromFile(dataSet);
+
+            StreamReader file = new StreamReader("Config.json");
+            JsonSerializer serializer = new JsonSerializer();
+            var configurations = JsonConvert.DeserializeObject<Configuration>(file.ReadToEnd());
+
+            if (queryOntology.Ontology == 1)
+                g.LoadFromFile(configurations.InstagramPath);
+            else
+                g.LoadFromFile(configurations.MyHeritagePath);
+
             try
             {
-                Object results = g.ExecuteQuery(Query);
+                Object results = g.ExecuteQuery(queryOntology.Query);
                 if (results is SparqlResultSet)
                 {
                     SparqlResultSet rset = (SparqlResultSet)results;
@@ -151,6 +160,7 @@ namespace ApplicationUW.Controllers
                 return Json(queryEx);
             }
         }
+
         [HttpGet]
         public ActionResult Demo()
         {

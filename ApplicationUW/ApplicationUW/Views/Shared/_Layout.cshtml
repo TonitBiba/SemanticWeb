@@ -52,6 +52,14 @@
             &copy; 2020 - Realizuar nga Blend Berisha, Endrit Mëziu dhe Tonit Biba. Grupi 2.
         </div>
     </footer>
+    <div class="modal center-modal fade" id="modalLoading" tabindex="-1" style="display: none;" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog" style="text-align: center">
+            <object type="image/svg+xml" data="~/images/Pulse-1s-200px (1).svg">
+                Loading...
+            </object>
+        </div>
+    </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
@@ -60,6 +68,32 @@
     <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/sweetalert2/dist/sweetalert2.all.min.js"></script>
+
+    <script>
+        $(document).on('submit', 'form', function () {
+            showLoading();
+            var button = $(this).find(':submit');
+            setTimeout(function () {
+                button.attr('disabled', 'disabled');
+            }, 0);
+        });
+
+        function showLoading() {
+            $('#modalLoading').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+            $("#modalLoading").modal('show');
+        }
+
+        //per me hjek loading barrin
+        function hideLoading() {
+            setTimeout(
+                function () {
+                    $("#modalLoading").modal('hide');
+                }, 500);
+        }
+    </script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

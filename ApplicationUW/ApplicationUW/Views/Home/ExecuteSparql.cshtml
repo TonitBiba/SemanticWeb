@@ -1,19 +1,21 @@
-﻿
+﻿@model ApplicationUW.Models.QueryOntology
+
 @{
     ViewData["Title"] = "ExecuteSparql";
 }
 
-
 <form action="@Url.Action("_ExecuteSPARQL")" method="post" data-ajax="true" data-ajax-method="post" data-ajax-success="onSuccess" data-ajax-complete="onCompleted()">
     @Html.AntiForgeryToken()
     <div class="row">
-        <div class="col-md-12">
-            @Html.Label("dataSet", "DataSet", new { @class = "required" })
-            @Html.TextBox("dataSet", @"C:\Users\tonit\Downloads\foaf.rdf", new { @class = "form-control" })
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.Ontology, new { @class = "required" })
+            @Html.DropDownListFor(m => m.Ontology, new List<SelectListItem> { new SelectListItem { Value = "1", Text = "Instagram" }, new SelectListItem { Value = "2", Text = "My Heritage" } }, "Zgjedhe", new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Ontology, null, new { @class = "text-danger" })
         </div>
         <div class="col-md-12">
-            @Html.Label("Query", "Pyetesori", new { @class = "required" })
-            @Html.TextArea("Query", new { @class = "form-control", rows = "12" })
+            @Html.LabelFor(m => m.Query, new { @class = "required" })
+            @Html.TextAreaFor(m => m.Query, new { @class = "form-control", placeholder = "SELECT DISTINCT ?Concept WHERE {[] a ?Concept}" })
+            @Html.ValidationMessageFor(m => m.Query, null, new { @class = "text-danger" })
         </div>
         <div class="col-md-2">
             @Html.Label("btnSubmit", null, new { style = "visibility:hidden" })<br />
@@ -32,7 +34,9 @@
 </table>
 @section scripts{
     <script>
+
         function onSuccess(data) {
+            hideLoading()
             var result = JSON.parse(data)
             if (result.length != 0) {
                 $('table thead tr').empty()
@@ -45,7 +49,7 @@
                 for (var i = 0; i < result.length; i++) {
                     $('table tbody').append('<tr></tr>')
                     for (var j = 0; j < result[i].length; j++) {
-                        $('table tbody tr').last().append('<td>' + (result[i][j].Value.value == undefined ? (result[i][j].Value.uri == undefined ? result[i][j].Value.Value : result[i][j].Value.uri) : result[i][j].Value.value) + '</td>');
+                        $('table tbody tr').last().append('<td>' + (result[i][j].Value != null ? (result[i][j].Value.value == undefined ? (result[i][j].Value.uri == undefined ? result[i][j].Value.Value : result[i][j].Value.uri) : result[i][j].Value.value) : 0) + '</td>');
                     }
                 }
                 $('#tblResult').DataTable()
@@ -54,12 +58,13 @@
                     icon: 'info',
                     title: 'Informate',
                     text: "Nuk ka asnje rezultat",
-                    confirmButtonText:'Në rregull'
+                    confirmButtonText: 'Në rregull'
                 })
             }
         }
         function onCompleted() {
-
+            $('#btnSubmit').removeAttr('disabled')
+        hideLoading()
         }
     </script>
 }
